@@ -96,7 +96,7 @@ export default function Twin() {
     // Check if avatar exists
     const [hasAvatar, setHasAvatar] = useState(false);
     useEffect(() => {
-        // Check if avatar.png exists
+        // Check if avatar.jpeg exists
         fetch('/avatar.jpeg', { method: 'HEAD' })
             .then(res => setHasAvatar(res.ok))
             .catch(() => setHasAvatar(false));
